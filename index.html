@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Barkin' Barber — Premium mobile dog grooming serving Sarasota, Lakewood Ranch, and surrounding areas. Private, one-on-one grooming at your doorstep." />
+  <title>Barkin' Barber | Premium Mobile Dog Grooming in Sarasota</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span>Serving Sarasota · Lakewood Ranch · Surrounding Areas</span>
+      <span class="topbar__contact">
+        <a href="tel:+19412781224">(941) 278-1224</a>
+        <span class="dot">·</span>
+        <a href="mailto:barkinbarbergrooming@gmail.com">barkinbarbergrooming@gmail.com</a>
+      </span>
+    </div>
+  </div>
+
+  <!-- Header / Nav -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="brand" aria-label="Barkin' Barber home">
+        <img src="favicon.svg" alt="Barkin' Barber logo" class="brand__logo" width="64" height="64" />
+        <span class="brand__text">Barkin'<span class="brand__amp">'</span> Barber</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Primary">
+        <a href="#services">Services & Pricing</a>
+        <a href="#why">Why Mobile</a>
+        <a href="#work">Our Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#social">Follow Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn--primary nav__cta">Book Now</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">Premium Mobile Dog Grooming</p>
+        <h1>Grooming that comes <span class="accent">to your door.</span></h1>
+        <p class="hero__lead">
+          Private, one-on-one grooming in a calm, fully equipped mobile van.
+          No cages. No waiting. Just your dog, pampered where they feel most comfortable.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Book a Grooming</a>
+          <a href="#services" class="btn btn--ghost btn--lg">View Pricing</a>
+        </div>
+        <ul class="hero__points">
+          <li><span aria-hidden="true">✓</span> One-on-one, cage-free care</li>
+          <li><span aria-hidden="true">✓</span> Modern, spotless mobile van</li>
+          <li><span aria-hidden="true">✓</span> Transparent, upfront pricing</li>
+        </ul>
+      </div>
+      <div class="hero__image">
+        <div class="hero__image-glow"></div>
+        <img src="https://images.unsplash.com/photo-1672307353525-9e88af4324ca?auto=format&fit=crop&w=900&q=80"
+             alt="A happy small white dog sitting in a grooming salon chair"
+             loading="eager" />
+        <div class="hero__image-badge">
+          <span class="hero__image-badge-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg>
+          </span>
+          <div>
+            <strong>Cage-free grooming</strong>
+            <span>One dog at a time, at your door</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wave" aria-hidden="true"></div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="trust">
+    <div class="container trust__inner">
+      <div class="trust__item">
+        <strong>5★</strong>
+        <span>Rated by Sarasota pet parents</span>
+      </div>
+      <div class="trust__item">
+        <strong>100%</strong>
+        <span>Private, cage-free sessions</span>
+      </div>
+      <div class="trust__item">
+        <strong>7 days</strong>
+        <span>Booking availability</span>
+      </div>
+      <div class="trust__item">
+        <strong>Same-day</strong>
+        <span>Confirmations & quotes</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services & Pricing -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Services & Pricing</p>
+        <h2>Simple, transparent pricing</h2>
+        <p class="section__sub">
+          Pricing is based on your dog's weight. Every dog is different — all listed prices are
+          starting prices and may vary based on breed, coat condition, temperament, and the time
+          required to safely complete the service. Final pricing is confirmed before grooming begins.
+        </p>
+      </div>
+
+      <div class="pricing">
+        <table class="pricing__table">
+          <thead>
+            <tr>
+              <th>Dog Weight</th>
+              <th>Bath & Brush</th>
+              <th>Full Groom</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>1–15 lb</td><td>$90+</td><td>$120+</td></tr>
+            <tr><td>16–30 lb</td><td>$95+</td><td>$130+</td></tr>
+            <tr><td>31–50 lb</td><td>$105+</td><td>$145+</td></tr>
+            <tr><td>51–75 lb</td><td>$120+</td><td>$165+</td></tr>
+            <tr><td>76–100 lb</td><td>$140+</td><td>$190+</td></tr>
+            <tr><td>101+ lb</td><td>$160+</td><td>$220+</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="services">
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12c0-4 3-7 7-7s7 3 7 7-3 7-7 7"/><path d="M7 12a3 3 0 016 0"/><path d="M5 19c2-1 4-1 6 0"/></svg>
+          </div>
+          <h3>Bath & Brush</h3>
+          <p>
+            Premium shampoo and conditioner, thorough bath, blow dry, brush-out and removal of loose
+            undercoat, nail grinding, ear cleaning, paw-pad cleanup, sanitary cleanup, and light
+            trimming/outline cleanup as needed.
+          </p>
+        </article>
+        <article class="service-card">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 8l4-4 8 8-4 4z"/><path d="M6 8l-2 6 6-2"/><path d="M14 16l4 4"/></svg>
+          </div>
+          <h3>Full Groom</h3>
+          <p>
+            Everything in Bath & Brush plus a full haircut and styling based on your dog's breed
+            and your personal request. Tailored, hand-finished results every visit.
+          </p>
+        </article>
+        <article class="service-card service-card--wide">
+          <div class="service-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg>
+          </div>
+          <h3>Additional Services</h3>
+          <ul class="addons">
+            <li><span>Nail Grinding</span><span>$40</span></li>
+            <li><span>Teeth Brushing</span><span>$15</span></li>
+            <li><span>Flea & Tick Shampoo</span><span>$20+</span></li>
+            <li><span>Matted Coat Fee</span><span>$30+</span></li>
+          </ul>
+          <p class="addons__note">
+            A $30+ additional fee may apply to heavily matted coats requiring extra time and care.
+          </p>
+        </article>
+      </div>
+
+      <div class="section__cta">
+        <a href="#contact" class="btn btn--primary btn--lg">Book Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Mobile -->
+  <section class="section section--alt" id="why">
+    <div class="container why">
+      <div class="why__copy">
+        <p class="eyebrow">Why Mobile Grooming?</p>
+        <h2>The calm, private alternative to the salon.</h2>
+        <p>
+          We bring our fully equipped mobile van directly to your Sarasota or Lakewood Ranch home —
+          eliminating the stress of cages, car rides, and long waiting times. Your dog receives
+          professional, undivided attention in a modern environment, exactly where they feel most
+          comfortable.
+        </p>
+        <ul class="why__list">
+          <li>
+            <span class="why__num">01</span>
+            <div><h4>One-on-one attention</h4><p>Your dog is the only client during their appointment — no shared space, no interruptions.</p></div>
+          </li>
+          <li>
+            <span class="why__num">02</span>
+            <div><h4>Zero cage time</h4><p>No crates, no waiting. We groom start to finish while you relax at home.</p></div>
+          </li>
+          <li>
+            <span class="why__num">03</span>
+            <div><h4>Calm & modern</h4><p>A spotless, climate-controlled van designed for low-stress, premium care.</p></div>
+          </li>
+        </ul>
+        <a href="#contact" class="btn btn--ghost">Learn More</a>
+      </div>
+      <div class="why__visual" aria-hidden="true">
+        <div class="why__visual-card">
+          <div class="why__stat"><strong>1</strong><span>dog at a time</span></div>
+          <div class="why__stat"><strong>0</strong><span>cages, ever</span></div>
+          <div class="why__stat"><strong>100%</strong><span>at your doorstep</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Our Work</p>
+        <h2>The art of mobile grooming</h2>
+        <p class="section__sub">
+          From our fully equipped van to your doorstep — professional one-on-one care across
+          Sarasota, Lakewood Ranch, and surrounding areas.
+        </p>
+      </div>
+
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--tall">
+          <img src="https://images.unsplash.com/photo-1590692141995-ad646e73e7de?auto=format&fit=crop&w=800&q=80"
+               alt="A happy yellow labrador retriever after grooming" loading="lazy" />
+          <figcaption>Fresh & Happy</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1648854947054-432af7faca56?auto=format&fit=crop&w=800&q=80"
+               alt="A dalmatian sitting in a bath tub during grooming" loading="lazy" />
+          <figcaption>Bath Time</figcaption>
+        </figure>
+        <figure class="gallery__item">
+          <img src="https://images.unsplash.com/photo-1585908286456-991b5d0e53f4?auto=format&fit=crop&w=800&q=80"
+               alt="A brown dog being bathed in a white tub" loading="lazy" />
+          <figcaption>Spa Day</figcaption>
+        </figure>
+        <figure class="gallery__item gallery__item--wide">
+          <img src="https://images.unsplash.com/photo-1713996240147-7a2f77d2871b?auto=format&fit=crop&w=1200&q=80"
+               alt="A small white dog sitting on a wooden chair after grooming" loading="lazy" />
+          <figcaption>Hand-Finished Styling</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section section--alt" id="reviews">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Trust the Bark</p>
+        <h2>What Sarasota pet parents say</h2>
+      </div>
+      <div class="reviews">
+        <figure class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“The best grooming experience in Sarasota. My dog is so happy and the attention to detail is unmatched. Truly a premium service.”</blockquote>
+          <figcaption><strong>Sarah M.</strong><span>Sarasota, FL</span></figcaption>
+        </figure>
+        <figure class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Finally, a mobile service that treats dogs like royalty. The van is clean, the staff is warm, and the results are stunning. Highly recommend!”</blockquote>
+          <figcaption><strong>David L.</strong><span>Lakewood Ranch, FL</span></figcaption>
+        </figure>
+        <figure class="review">
+          <div class="review__stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <blockquote>“Professional, calm, and very thorough. We've had our dog groomed here twice now and he loves it. It's the only place we trust.”</blockquote>
+          <figcaption><strong>Emily R.</strong><span>Sarasota, FL</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Media -->
+  <section class="section" id="social">
+    <div class="container">
+      <div class="section__head">
+        <p class="eyebrow">Follow Us</p>
+        <h2>Join the Barkin' Barber family</h2>
+        <p class="section__sub">
+          Follow <strong>@barkinbarbergrooming</strong> on Facebook & Instagram for before-and-afters,
+          grooming tips, and behind-the-scenes from the van.
+        </p>
+      </div>
+
+      <div class="social">
+        <a href="https://www.facebook.com/barkinbarbergrooming" target="_blank" rel="noopener" class="social__card social__card--fb">
+          <div class="social__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.02 1.79-4.69 4.53-4.69 1.31 0 2.69.24 2.69.24v2.97h-1.52c-1.49 0-1.96.93-1.96 1.89v2.25h3.33l-.53 3.49h-2.8V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+          </div>
+          <div class="social__text">
+            <strong>Facebook</strong>
+            <span>@barkinbarbergrooming</span>
+          </div>
+          <span class="social__arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="https://www.instagram.com/barkinbarbergrooming" target="_blank" rel="noopener" class="social__card social__card--ig">
+          <div class="social__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <div class="social__text">
+            <strong>Instagram</strong>
+            <span>@barkinbarbergrooming</span>
+          </div>
+          <span class="social__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+      <div class="instagram-grid">
+        <a href="https://www.instagram.com/barkinbarbergrooming" target="_blank" rel="noopener" class="ig-tile">
+          <img src="https://images.unsplash.com/photo-1672307353525-9e88af4324ca?auto=format&fit=crop&w=500&q=80" alt="Groomed white dog in salon chair" loading="lazy" />
+          <span class="ig-tile__overlay"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        </a>
+        <a href="https://www.instagram.com/barkinbarbergrooming" target="_blank" rel="noopener" class="ig-tile">
+          <img src="https://images.unsplash.com/photo-1590692141995-ad646e73e7de?auto=format&fit=crop&w=500&q=80" alt="Happy labrador after grooming" loading="lazy" />
+          <span class="ig-tile__overlay"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        </a>
+        <a href="https://www.instagram.com/barkinbarbergrooming" target="_blank" rel="noopener" class="ig-tile">
+          <img src="https://images.unsplash.com/photo-1648854947054-432af7faca56?auto=format&fit=crop&w=500&q=80" alt="Dalmatian in bath" loading="lazy" />
+          <span class="ig-tile__overlay"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        </a>
+        <a href="https://www.instagram.com/barkinbarbergrooming" target="_blank" rel="noopener" class="ig-tile">
+          <img src="https://images.unsplash.com/photo-1585908286456-991b5d0e53f4?auto=format&fit=crop&w=500&q=80" alt="Brown dog being bathed" loading="lazy" />
+          <span class="ig-tile__overlay"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        </a>
+        <a href="https://www.instagram.com/barkinbarbergrooming" target="_blank" rel="noopener" class="ig-tile">
+          <img src="https://images.unsplash.com/photo-1713996240147-7a2f77d2871b?auto=format&fit=crop&w=500&q=80" alt="White dog on wooden chair" loading="lazy" />
+          <span class="ig-tile__overlay"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        </a>
+        <a href="https://www.instagram.com/barkinbarbergrooming" target="_blank" rel="noopener" class="ig-tile">
+          <img src="https://images.unsplash.com/photo-1672426638296-6cfa2945a71a?auto=format&fit=crop&w=500&q=80" alt="Dog in bathtub" loading="lazy" />
+          <span class="ig-tile__overlay"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <div class="container contact">
+      <div class="contact__info">
+        <p class="eyebrow">Contact Us Today</p>
+        <h2>Book your dog's grooming.</h2>
+        <p class="contact__lead">
+          Tell us about your dog and we'll confirm availability and final pricing before your
+          appointment begins.
+        </p>
+        <ul class="contact__list">
+          <li>
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-3 2a12 12 0 005 5l2-3 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>
+            </span>
+            <div><span>Call or text</span><a href="tel:+19412781224">(941) 278-1224</a></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            </span>
+            <div><span>Email</span><a href="mailto:barkinbarbergrooming@gmail.com">barkinbarbergrooming@gmail.com</a></div>
+          </li>
+          <li>
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>
+            </span>
+            <div><span>Follow us</span><a href="#social">@barkinbarbergrooming</a></div>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact__form" id="bookingForm" novalidate>
+        <div class="form__row">
+          <div class="field">
+            <label for="name">Full name *</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email address *</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label for="phone">Phone number *</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="field">
+            <label for="dogName">Dog's name *</label>
+            <input type="text" id="dogName" name="dogName" required />
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label for="dogBreed">Breed / weight</label>
+            <input type="text" id="dogBreed" name="dogBreed" placeholder="e.g. Golden Retriever, 65 lb" />
+          </div>
+          <div class="field">
+            <label for="service">Service *</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="Bath & Brush">Bath & Brush</option>
+              <option value="Full Groom">Full Groom</option>
+              <option value="Not sure">Not sure — help me choose</option>
+            </select>
+          </div>
+        </div>
+        <div class="form__row">
+          <div class="field">
+            <label for="date">Preferred date *</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="field">
+            <label for="time">Preferred time *</label>
+            <select id="time" name="time" required>
+              <option value="" disabled selected>Select a time</option>
+              <option value="Morning (8–11 AM)">Morning (8–11 AM)</option>
+              <option value="Midday (11 AM–2 PM)">Midday (11 AM–2 PM)</option>
+              <option value="Afternoon (2–5 PM)">Afternoon (2–5 PM)</option>
+              <option value="Flexible">I'm flexible</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message *</label>
+          <textarea id="message" name="message" rows="3" required placeholder="Tell us about your dog's temperament, coat condition, or any special requests."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Request Booking</button>
+        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <img src="favicon.svg" alt="Barkin' Barber logo" class="brand__logo" width="40" height="40" />
+        <span>Barkin' Barber</span>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="#services">Services & Pricing</a>
+        <a href="#why">Why Mobile</a>
+        <a href="#work">Our Work</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#social">Follow Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer__contact">
+        <a href="tel:+19412781224">(941) 278-1224</a>
+        <a href="mailto:barkinbarbergrooming@gmail.com">barkinbarbergrooming@gmail.com</a>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© 2026 Barkin' Barber. All rights reserved.</p>
+      <p class="footer__areas">Sarasota · Lakewood Ranch · Surrounding Areas</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

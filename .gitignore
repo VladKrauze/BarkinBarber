@@ -1,0 +1,12 @@
+# Local dev server
+serve.ps1
+
+# Logo concept preview page (not needed on the live site)
+logo-concepts.html
+
+# Nested repo (not needed)
+BarkinBarber/
+
+# OS files
+.DS_Store
+Thumbs.db
