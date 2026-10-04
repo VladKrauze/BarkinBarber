@@ -56,75 +56,10 @@
   });
 })();
 
-// ===== Contact form validation =====
-(function () {
-  const form = document.getElementById("bookingForm");
-  if (!form) return;
-  const status = document.getElementById("formStatus");
-
-  // Set min date to today
-  const dateInput = document.getElementById("date");
-  if (dateInput) {
-    const today = new Date().toISOString().split("T")[0];
-    dateInput.min = today;
-  }
-
-  const fields = ["name", "email", "phone", "dogName", "service", "date", "time", "message"];
-  const isEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
-  const isPhone = (v) => /[\d\s()+\-]{7,}/.test(v);
-
-  const validators = {
-    name: (v) => v.trim().length >= 2,
-    email: (v) => isEmail(v.trim()),
-    phone: (v) => isPhone(v.trim()),
-    dogName: (v) => v.trim().length >= 1,
-    service: (v) => v.trim().length >= 1,
-    date: (v) => v.trim().length >= 1,
-    time: (v) => v.trim().length >= 1,
-    message: (v) => v.trim().length >= 5,
-  };
-
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    let ok = true;
-
-    fields.forEach((id) => {
-      const input = document.getElementById(id);
-      if (!input) return;
-      const valid = validators[id](input.value);
-      input.classList.toggle("invalid", !valid);
-      if (!valid) ok = false;
-    });
-
-    if (!ok) {
-      status.textContent = "Please fill in all required fields with valid details.";
-      status.className = "form__status err";
-      return;
-    }
-
-    const dogName = document.getElementById("dogName").value;
-    const service = document.getElementById("service").value;
-    const date = document.getElementById("date").value;
-    const time = document.getElementById("time").value;
-
-    status.textContent = `Thanks! We received your booking request for ${dogName} (${service}) on ${date} — ${time}. We'll confirm shortly!`;
-    status.className = "form__status ok";
-    form.reset();
-  });
-
-  // Clear invalid state as the user types
-  fields.forEach((id) => {
-    const input = document.getElementById(id);
-    if (!input) return;
-    input.addEventListener("input", () => input.classList.remove("invalid"));
-    input.addEventListener("change", () => input.classList.remove("invalid"));
-  });
-})();
-
 // ===== Reveal on scroll =====
 (function () {
   const targets = document.querySelectorAll(
-    ".service-card, .review, .gallery__item, .why__visual-card, .pricing__table, .contact__form, .social__card, .ig-tile"
+    ".service-card, .review, .gallery__item, .why__visual-card, .pricing__table, .contact__form-wrap, .social__card, .ig-tile"
   );
   if (!targets.length || !("IntersectionObserver" in window)) return;
 

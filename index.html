@@ -367,65 +367,22 @@
         </ul>
       </div>
 
-      <form class="contact__form" id="bookingForm" novalidate>
-        <div class="form__row">
-          <div class="field">
-            <label for="name">Full name *</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="field">
-            <label for="email">Email address *</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-        </div>
-        <div class="form__row">
-          <div class="field">
-            <label for="phone">Phone number *</label>
-            <input type="tel" id="phone" name="phone" required />
-          </div>
-          <div class="field">
-            <label for="dogName">Dog's name *</label>
-            <input type="text" id="dogName" name="dogName" required />
-          </div>
-        </div>
-        <div class="form__row">
-          <div class="field">
-            <label for="dogBreed">Breed / weight</label>
-            <input type="text" id="dogBreed" name="dogBreed" placeholder="e.g. Golden Retriever, 65 lb" />
-          </div>
-          <div class="field">
-            <label for="service">Service *</label>
-            <select id="service" name="service" required>
-              <option value="" disabled selected>Select a service</option>
-              <option value="Bath & Brush">Bath & Brush</option>
-              <option value="Full Groom">Full Groom</option>
-              <option value="Not sure">Not sure — help me choose</option>
-            </select>
-          </div>
-        </div>
-        <div class="form__row">
-          <div class="field">
-            <label for="date">Preferred date *</label>
-            <input type="date" id="date" name="date" required />
-          </div>
-          <div class="field">
-            <label for="time">Preferred time *</label>
-            <select id="time" name="time" required>
-              <option value="" disabled selected>Select a time</option>
-              <option value="Morning (8–11 AM)">Morning (8–11 AM)</option>
-              <option value="Midday (11 AM–2 PM)">Midday (11 AM–2 PM)</option>
-              <option value="Afternoon (2–5 PM)">Afternoon (2–5 PM)</option>
-              <option value="Flexible">I'm flexible</option>
-            </select>
-          </div>
-        </div>
-        <div class="field">
-          <label for="message">Message *</label>
-          <textarea id="message" name="message" rows="3" required placeholder="Tell us about your dog's temperament, coat condition, or any special requests."></textarea>
-        </div>
-        <button type="submit" class="btn btn--primary btn--lg btn--block">Request Booking</button>
-        <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
+      <div class="contact__form-wrap">
+        <iframe
+          src="https://form.moego.pet/go/form?formId=698567b38c654abba24d480133e4ce2b"
+          title="Barkin' Barber Booking Form"
+          class="contact__iframe"
+          loading="lazy"
+          frameborder="0"
+          allow="clipboard-write"
+        ></iframe>
+        <noscript>
+          <p style="text-align:center; padding: 2rem;">
+            Please enable JavaScript to use the booking form, or
+            <a href="https://form.moego.pet/go/form?formId=698567b38c654abba24d480133e4ce2b" target="_blank" rel="noopener">open the form here</a>.
+          </p>
+        </noscript>
+      </div>
     </div>
   </section>
 
