@@ -342,7 +342,7 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   border-radius: 12px; background: var(--brand-soft); color: var(--brand);
   display: flex; align-items: center; justify-content: center;
 }
-.contact__icon svg { width: 22px; height: 22px; }
+.contact__icon svg { width: 24px; height: 24px; }
 .contact__list span { display: block; font-size: 0.9rem; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 700; }
 .contact__list a { font-family: var(--font-head); font-size: 1.25rem; font-weight: 600; color: var(--ink); transition: color 0.15s; word-break: break-word; }
 .contact__list a:hover { color: var(--brand); }
