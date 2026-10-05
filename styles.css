@@ -184,11 +184,13 @@ button { font: inherit; cursor: pointer; border: none; background: none; color: 
   box-shadow: var(--shadow-md);
 }
 .hero__image-badge-icon {
-  width: 40px; height: 40px; flex-shrink: 0;
+  width: 46px; height: 46px; flex-shrink: 0;
   border-radius: 50%;
   background: var(--accent-soft); color: var(--accent);
   display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
 }
+.hero__image-badge-icon img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .hero__image-badge strong { display: block; font-family: var(--font-head); font-size: 0.95rem; color: var(--ink); }
 .hero__image-badge span { display: block; font-size: 0.82rem; color: var(--ink-mute); }
 .badge { background: var(--accent-soft); color: var(--accent); padding: 0.2rem 0.7rem; border-radius: 999px; font-size: 0.8rem; font-weight: 600; }
